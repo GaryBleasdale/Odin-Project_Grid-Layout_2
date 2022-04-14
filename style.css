@@ -1,0 +1,59 @@
+body, html {
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display:grid;
+  grid-template-columns: 0.25fr, 0.75fr;
+  grid-template-rows: 0.125fr,0.125fr,0.625fr,0.125fr;
+  gap: 15px;
+  text-align: center;
+  height: 100vh;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+}
+
+.header {
+  grid-area: 1/1/2/3 ;
+  background-color: #FFDE22;
+
+}
+
+.sidebar {
+  background-color: #FF7755;
+  grid-area: 2/1/4/2;
+}
+
+.nav {
+  background-color: #00DDFF;
+  grid-area: 2/2/3/3;
+}
+
+.article {
+  background-color: #bccbde;
+  grid-area:2/2/4/3;
+  overflow: scroll;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+
+}
+
+.footer {
+  background-color: #393f4d;
+  grid-area: 4/1/5/3;
+}
